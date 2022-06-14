@@ -9,4 +9,8 @@ public class HelloService {
 		return "Hello World!";
 	}
 
+	public String helloCustom(String name) {
+		return String.format("Hello %s!", name);
+	}
+
 }
