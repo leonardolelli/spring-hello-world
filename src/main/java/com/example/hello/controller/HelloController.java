@@ -14,6 +14,7 @@ public class HelloController {
 
 	@Autowired 
 	private HelloService helloService;
+
     @GetMapping
     public String hello() {
     	return helloService.hello();
@@ -22,4 +23,6 @@ public class HelloController {
     public String helloCustom(@RequestParam String name) {
         return helloService.helloCustom(name);
     }
+
+
 }
